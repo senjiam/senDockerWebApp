@@ -1,9 +1,9 @@
-appName: myhelmapp
+appName:  nginx-deployment
 
 configmap:
-  name: myhelmapp-configmap-v1
+  name: nginx-config
   data:
-    CUSTOM_HEADER: 'This app was deployed with helm!'
+    CUSTOM_HEADER: 'This app was deployed with nginx!'
 
 image:
   name: senjiam/senDockerWebApp
